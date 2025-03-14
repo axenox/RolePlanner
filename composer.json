@@ -1,0 +1,22 @@
+{
+    "name": "axenox/roleplanner",
+    "require": {
+        "exface/core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\axenox\\RolePlanner\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Config/",
+            "/Translations/",
+            "/Model/"
+        ]
+    },
+    "extra": {
+        "app": {
+            "app_uid": "0x11f085cb08dbfec285cb005056bef75d",
+            "app_alias": "axenox.RolePlanner"
+        }
+    }
+}
