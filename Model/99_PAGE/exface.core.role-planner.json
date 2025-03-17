@@ -1,0 +1,293 @@
+{
+    "uid": "0x11f0b34361458986b343005056bef75d",
+    "alias_with_namespace": "exface.core.role-planner",
+    "menu_parent_page_selector": "0xf8310d4bba2c11e7895fe4b318306b9a",
+    "menu_index": 17,
+    "menu_visible": true,
+    "name": "Role Planner",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
+    "created_on": "2025-03-17 15:59:09",
+    "modified_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
+    "modified_on": "2025-03-17 16:56:12",
+    "contents": {
+        "widget_type": "Tabs",
+        "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
+        "tabs": [
+            {
+                "caption": "Role sync",
+                "widgets": [
+                    {
+                        "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
+                        "widget_type": "DataTable",
+                        "hide_header": false,
+                        "hide_caption": true,
+                        "filters": [
+                            {
+                                "attribute_alias": "USER_ROLE__APP__NAME",
+                                "caption": "Modul",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            },
+                            {
+                                "attribute_alias": "NAME",
+                                "caption": "Ext. role name"
+                            },
+                            {
+                                "attribute_alias": "ALIAS",
+                                "caption": "Ext. role ID"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE__ALIAS",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            },
+                            {
+                                "attribute_alias": "ACTIVE_FLAG",
+                                "input_widget": {
+                                    "widget_type": "InputSelect",
+                                    "selectable_null": false
+                                }
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "ACTIVE_FLAG"
+                            },
+                            {
+                                "attribute_alias": "KEEP_MANUAL_ASSIGNMENTS_FLAG"
+                            },
+                            {
+                                "attribute_alias": "NAME",
+                                "caption": "Ext. role name"
+                            },
+                            {
+                                "attribute_alias": "ALIAS",
+                                "caption": "Ext. role ID"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE__LABEL",
+                                "caption": "Workbench role"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE__ALIAS",
+                                "caption": "Workbench role alias"
+                            },
+                            {
+                                "attribute_alias": "CREATED_ON"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "Local roles to external roles",
+                "widgets": [
+                    {
+                        "object_alias": "exface.Core.USER_ROLE",
+                        "widget_type": "DataTable",
+                        "hide_header": false,
+                        "hide_caption": true,
+                        "filters": [
+                            {
+                                "attribute_alias": "APP",
+                                "caption": "Modul",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            },
+                            {
+                                "attribute_alias": "APP__ALIAS",
+                                "apply_on_change": true,
+                                "hidden": true,
+                                "comparator": "![",
+                                "value": "axenox.PackageManager,exface.Core"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_EXTERNAL__NAME",
+                                "caption": "Ext. role name"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_EXTERNAL__ALIAS",
+                                "caption": "Ext. role ID"
+                            },
+                            {
+                                "attribute_alias": "NAME",
+                                "caption": "Workbench role",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true,
+                                    "table": {
+                                        "object_alias": "exface.Core.USER_ROLE",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "APP__ALIAS",
+                                                "comparator": "![",
+                                                "value": "axenox.PackageManager,exface.Core",
+                                                "hidden": true
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "NAME"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "attribute_alias": "ALIAS",
+                                "caption": "Workbench role alias",
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true,
+                                    "table": {
+                                        "object_alias": "exface.Core.USER_ROLE",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "APP__ALIAS",
+                                                "comparator": "![",
+                                                "value": "axenox.PackageManager,exface.Core",
+                                                "hidden": true
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "ALIAS"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "apply_on_change": true
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "NAME",
+                                "caption": "Workbench role"
+                            },
+                            {
+                                "attribute_alias": "ALIAS",
+                                "caption": "Workbench role alias"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_EXTERNAL__NAME:LIST",
+                                "caption": "Ext. roles"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_EXTERNAL__ALIAS:LIST",
+                                "caption": "Ext. role IDs"
+                            }
+                        ],
+                        "aggregate_by_attribute_alias": [
+                            "NAME",
+                            "ALIAS",
+                            "APP"
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "Role concept",
+                "widgets": [
+                    {
+                        "object_alias": "axenox.RolePlanner.role",
+                        "widget_type": "DataTable",
+                        "hide_header": false,
+                        "hide_caption": true,
+                        "filters": [
+                            {
+                                "attribute_alias": "name"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "name"
+                            },
+                            {
+                                "attribute_alias": "user_role__LABEL"
+                            },
+                            {
+                                "attribute_alias": "description",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_alias": "external_role_name"
+                            },
+                            {
+                                "attribute_alias": "external_role_alias",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_alias": "permissions_read",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_alias": "permissions_write",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_alias": "notifications",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_alias": "comments",
+                                "cell_widget": {
+                                    "widget_type": "Text"
+                                }
+                            },
+                            {
+                                "attribute_group_alias": "~CUSTOM"
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.core.ShowObjectCreateDialog"
+                            },
+                            {
+                                "action_alias": "exface.core.ShowObjectEditDialog",
+                                "bind_to_double_click": true
+                            },
+                            {
+                                "action_alias": "exface.core.ShowObjectCopyDialog"
+                            },
+                            {
+                                "action_alias": "exface.core.DeleteObject",
+                                "visibility": "optional"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

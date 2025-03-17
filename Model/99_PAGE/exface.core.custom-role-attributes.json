@@ -1,0 +1,66 @@
+{
+    "uid": "0x11f0891794fe87328917005056bef75d",
+    "alias_with_namespace": "exface.core.custom-role-attributes",
+    "menu_parent_page_selector": "0x11f0b34361458986b343005056bef75d",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Custom role attributes",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
+    "created_on": "2025-03-17 16:00:36",
+    "modified_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
+    "modified_on": "2025-03-17 16:49:19",
+    "contents": {
+        "object_alias": "axenox.RolePlanner.role_attribute",
+        "widget_type": "DataTable",
+        "hide_header": false,
+        "hide_caption": true,
+        "columns": [
+            {
+                "attribute_alias": "display_order"
+            },
+            {
+                "attribute_alias": "name"
+            },
+            {
+                "attribute_alias": "app__NAME"
+            },
+            {
+                "attribute_alias": "hint"
+            },
+            {
+                "attribute_alias": "json_property"
+            },
+            {
+                "attribute_alias": "required"
+            },
+            {
+                "attribute_alias": "type"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "display_order",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}
