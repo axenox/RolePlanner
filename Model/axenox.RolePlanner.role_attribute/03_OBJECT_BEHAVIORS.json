@@ -61,71 +61,23 @@
     ],
     "rows": [
         {
-            "_EXPORT_SUMMARY": "Status model",
-            "CREATED_ON": "2025-03-14 15:32:04",
-            "MODIFIED_ON": "2025-03-14 15:33:11",
-            "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
-            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
-            "UID": "0x11f0b88319cd9834b883005056bef75d",
-            "BEHAVIOR": "exface/core/Behaviors/StateMachineBehavior.php",
-            "CONFIG_UXON": {
-                "state_attribute_alias": "status",
-                "hide_state_ids": true,
-                "states": {
-                    "10": {
-                        "name": "Draft",
-                        "color": "red"
-                    },
-                    "50": {
-                        "name": "Inactive",
-                        "color": "orange"
-                    },
-                    "100": {
-                        "name": "Active",
-                        "color": "green"
-                    }
-                }
-            },
-            "OBJECT": "0x11f08ce364108d3c8ce3005056bef75d",
-            "APP": "0x11f085cb08dbfec285cb005056bef75d",
-            "NAME": "Status model",
-            "DESCRIPTION": "",
-            "DISABLED_FLAG": 0,
-            "PRIORITY": null
-        },
-        {
-            "_EXPORT_SUMMARY": "Custom attributes stored as JSON",
-            "CREATED_ON": "2025-03-17 16:14:02",
-            "MODIFIED_ON": "2025-03-17 16:35:00",
+            "_EXPORT_SUMMARY": "Custom attributes for roles",
+            "CREATED_ON": "2025-03-17 16:08:32",
+            "MODIFIED_ON": "2025-03-17 16:34:10",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
             "MODIFIED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
-            "UID": "0x11f0a395756f40b2a395005056bef75d",
-            "BEHAVIOR": "exface/core/Behaviors/CustomAttributesJsonBehavior.php",
+            "UID": "0x11f094ccb0b0dff694cc005056bef75d",
+            "BEHAVIOR": "exface/core/Behaviors/CustomAttributeDefinitionBehavior.php",
             "CONFIG_UXON": {
-                "attributes_definition": {
-                    "object_alias": "axenox.RolePlanner.role_attribute",
-                    "sorters": [
-                        {
-                            "attribute_alias": "display_order",
-                            "direction": "ASC"
-                        }
-                    ]
-                },
-                "json_attribute_alias": "custom_attributes",
-                "attributes_defaults": {
-                    "writable": true,
-                    "copyable": true,
-                    "editable": true,
-                    "required": false,
-                    "filterable": true,
-                    "sortable": true,
-                    "aggregatable": false,
-                    "value_list_delimiter": ","
-                }
+                "name_attribute": "name",
+                "hint_attribute": "hint",
+                "required_attribute": "required",
+                "data_address_attribute": "json_property",
+                "type_attribute": "type"
             },
-            "OBJECT": "0x11f08ce364108d3c8ce3005056bef75d",
+            "OBJECT": "0x11f0b4a5392b16e4b4a5005056bef75d",
             "APP": "0x11f085cb08dbfec285cb005056bef75d",
-            "NAME": "Custom attributes stored as JSON",
+            "NAME": "Custom attributes for roles",
             "DESCRIPTION": "",
             "DISABLED_FLAG": 0,
             "PRIORITY": null

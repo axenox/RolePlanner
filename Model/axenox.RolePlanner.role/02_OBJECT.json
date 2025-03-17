@@ -87,9 +87,9 @@
         {
             "_EXPORT_SUMMARY": "Role [axenox.RolePlanner.role]",
             "CREATED_ON": "2025-03-14 15:12:41",
-            "MODIFIED_ON": "2025-03-14 15:34:57",
+            "MODIFIED_ON": "2025-03-17 16:23:08",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
-            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "MODIFIED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
             "UID": "0x11f08ce364108d3c8ce3005056bef75d",
             "READABLE_FLAG": 1,
             "WRITABLE_FLAG": 1,
@@ -102,7 +102,57 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": null,
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": null,
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Dialog",
+                "widgets": [
+                    {
+                        "widget_type": "WidgetGroup",
+                        "widgets": [
+                            {
+                                "attribute_alias": "name"
+                            },
+                            {
+                                "attribute_alias": "description"
+                            },
+                            {
+                                "attribute_alias": "user_role"
+                            },
+                            {
+                                "attribute_alias": "external_role_name"
+                            },
+                            {
+                                "attribute_alias": "external_role_alias"
+                            },
+                            {
+                                "attribute_alias": "permissions_read"
+                            },
+                            {
+                                "attribute_alias": "permissions_write"
+                            },
+                            {
+                                "attribute_alias": "notifications"
+                            },
+                            {
+                                "attribute_alias": "comments"
+                            },
+                            {
+                                "attribute_alias": "status"
+                            },
+                            {
+                                "attribute_alias": "custom_attributes"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "WidgetGroup",
+                        "widgets": [
+                            {
+                                "attribute_group_alias": "~CUSTOM"
+                            }
+                        ]
+                    }
+                ]
+            },
             "ALIAS": "role",
             "DATA_ADDRESS": "dbo.rp_role"
         }
