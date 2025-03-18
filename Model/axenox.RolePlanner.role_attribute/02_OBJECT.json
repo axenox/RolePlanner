@@ -87,7 +87,7 @@
         {
             "_EXPORT_SUMMARY": "Role custom attribute [axenox.RolePlanner.role_attribute]",
             "CREATED_ON": "2025-03-14 15:25:48",
-            "MODIFIED_ON": "2025-03-14 15:26:46",
+            "MODIFIED_ON": "2025-03-18 16:09:59",
             "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f0b4a5392b16e4b4a5005056bef75d",
@@ -102,7 +102,34 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": null,
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": null,
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Dialog",
+                "maximized": false,
+                "width": 1,
+                "widgets": [
+                    {
+                        "attribute_alias": "name"
+                    },
+                    {
+                        "attribute_alias": "json_property"
+                    },
+                    {
+                        "attribute_alias": "app"
+                    },
+                    {
+                        "attribute_alias": "type"
+                    },
+                    {
+                        "attribute_alias": "display_order"
+                    },
+                    {
+                        "attribute_alias": "hint"
+                    },
+                    {
+                        "attribute_alias": "required"
+                    }
+                ]
+            },
             "ALIAS": "role_attribute",
             "DATA_ADDRESS": "dbo.rp_role_attribute"
         }

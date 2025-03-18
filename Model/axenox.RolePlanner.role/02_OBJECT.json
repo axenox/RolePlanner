@@ -87,9 +87,9 @@
         {
             "_EXPORT_SUMMARY": "Role [axenox.RolePlanner.role]",
             "CREATED_ON": "2025-03-14 15:12:41",
-            "MODIFIED_ON": "2025-03-17 16:23:08",
+            "MODIFIED_ON": "2025-03-18 15:44:30",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
-            "MODIFIED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f08ce364108d3c8ce3005056bef75d",
             "READABLE_FLAG": 1,
             "WRITABLE_FLAG": 1,
@@ -104,25 +104,50 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_EDITOR_UXON": {
                 "widget_type": "Dialog",
+                "maximized": false,
                 "widgets": [
                     {
                         "widget_type": "WidgetGroup",
+                        "caption": "Interal role information",
+                        "width": 1,
                         "widgets": [
                             {
                                 "attribute_alias": "name"
                             },
                             {
-                                "attribute_alias": "description"
-                            },
-                            {
                                 "attribute_alias": "user_role"
                             },
+                            {
+                                "attribute_alias": "status"
+                            },
+                            {
+                                "attribute_alias": "description"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "WidgetGroup",
+                        "caption": "External role information",
+                        "width": 1,
+                        "widgets": [
                             {
                                 "attribute_alias": "external_role_name"
                             },
                             {
                                 "attribute_alias": "external_role_alias"
                             },
+                            {
+                                "attribute_alias": "external_role_sync_flag"
+                            },
+                            {
+                                "attribute_alias": "external_role_mapped_flag"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "WidgetGroup",
+                        "caption": "Interal role configuration",
+                        "widgets": [
                             {
                                 "attribute_alias": "permissions_read"
                             },
@@ -134,17 +159,12 @@
                             },
                             {
                                 "attribute_alias": "comments"
-                            },
-                            {
-                                "attribute_alias": "status"
-                            },
-                            {
-                                "attribute_alias": "custom_attributes"
                             }
                         ]
                     },
                     {
                         "widget_type": "WidgetGroup",
+                        "caption": "Additional information",
                         "widgets": [
                             {
                                 "attribute_group_alias": "~CUSTOM"

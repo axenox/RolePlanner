@@ -10,8 +10,8 @@
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
-    "modified_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
-    "modified_on": "2025-03-17 16:56:12",
+    "modified_by_user_selector": "0x11edadc86322ed48adc8005056bef75d",
+    "modified_on": "2025-03-18 10:26:20",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
@@ -227,6 +227,9 @@
                                 "attribute_alias": "user_role__LABEL"
                             },
                             {
+                                "attribute_alias": "status"
+                            },
+                            {
                                 "attribute_alias": "description",
                                 "cell_widget": {
                                     "widget_type": "Text"
@@ -266,7 +269,17 @@
                                 }
                             },
                             {
+                                "attribute_alias": "external_role_sync_flag"
+                            },
+                            {
+                                "attribute_alias": "external_role_mapped_flag"
+                            },
+                            {
                                 "attribute_group_alias": "~CUSTOM"
+                            },
+                            {
+                                "attribute_alias": "CREATED_BY_USER__LABEL",
+                                "caption": "Ersteller"
                             }
                         ],
                         "buttons": [
