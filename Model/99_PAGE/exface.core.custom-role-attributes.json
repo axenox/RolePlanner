@@ -10,8 +10,8 @@
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 16:00:36",
-    "modified_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
-    "modified_on": "2025-03-17 16:49:19",
+    "modified_by_user_selector": "0x11edadc86322ed48adc8005056bef75d",
+    "modified_on": "2025-03-19 09:08:15",
     "contents": {
         "object_alias": "axenox.RolePlanner.role_attribute",
         "widget_type": "DataTable",
@@ -19,25 +19,25 @@
         "hide_caption": true,
         "columns": [
             {
-                "attribute_alias": "display_order"
-            },
-            {
                 "attribute_alias": "name"
-            },
-            {
-                "attribute_alias": "app__NAME"
-            },
-            {
-                "attribute_alias": "hint"
             },
             {
                 "attribute_alias": "json_property"
             },
             {
-                "attribute_alias": "required"
+                "attribute_alias": "app__NAME"
             },
             {
                 "attribute_alias": "type"
+            },
+            {
+                "attribute_alias": "display_order"
+            },
+            {
+                "attribute_alias": "hint"
+            },
+            {
+                "attribute_alias": "required"
             }
         ],
         "sorters": [
