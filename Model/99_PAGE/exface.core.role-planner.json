@@ -4,14 +4,14 @@
     "menu_parent_page_selector": "0xf8310d4bba2c11e7895fe4b318306b9a",
     "menu_index": 17,
     "menu_visible": true,
-    "name": "Role Planner",
+    "name": "Rollenkonzeption",
     "description": "",
     "intro": "",
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
     "modified_by_user_selector": "0x11edadc86322ed48adc8005056bef75d",
-    "modified_on": "2025-03-19 09:47:44",
+    "modified_on": "2025-03-20 09:08:17",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
@@ -97,7 +97,7 @@
                 ]
             },
             {
-                "caption": "Local roles to external roles",
+                "caption": "Internal roles to external roles",
                 "widgets": [
                     {
                         "object_alias": "exface.Core.USER_ROLE",

@@ -1,0 +1,21 @@
+{
+    "NAME": "Rollenkonzeption",
+    "DESCRIPTION": null,
+    "INTRO": null,
+    "CONTENT.CAPTION.EXISTING_ROLE_SYNCHRONIZATIONS": "Eingerichtete Rollensynchronisationen",
+    "CONTENT.CAPTION.APP": "Modul",
+    "CONTENT.CAPTION.EXT._ROLE_NAME": "Ext. Rollenname",
+    "CONTENT.CAPTION.EXT._ROLE_ALIAS": "Ext. Rollenalias",
+    "CONTENT.CAPTION.INTERNAL_ROLE": "Interne Rolle",
+    "CONTENT.CAPTION.INTERNAL_ROLE_ALIAS": "Interner Rollenalias",
+    "CONTENT.CAPTION.INTERNAL_ROLES_TO_EXTERNAL_ROLES": "Interne Rollen zu externe Rollen",
+    "CONTENT.CAPTION.EXT._ROLE_NAMES": "Ext. Rollennamen",
+    "CONTENT.CAPTION.COMPARISON_MANUALLY_ASSIGNED\/SYNCHRONIZED_ROLES": "Vergleich manuelle\/synchronisierte Rollen",
+    "CONTENT.CAPTION.MANUALLY_ASSIGNED_ROLES": "Manuelle Rollen",
+    "CONTENT.CAPTION.INTERNAL_ROLE_NAME": "Interner Rollenname",
+    "CONTENT.CAPTION.SYNCHRONIZED_ROLES": "Synchronisierte Rollen",
+    "CONTENT.CAPTION.ROLE_CONCEPT": "Rollenkonzeption",
+    "CONTENT.CAPTION.SYNCHRONIZE_WITH_EXT._ROLE": "Mit ext. Rolle synchronisieren",
+    "CONTENT.CAPTION.EXT._ROLE_MAPPED": "Ext. Rolle verbunden",
+    "CONTENT.CAPTION.CREATED_BY": "Ersteller"
+}
