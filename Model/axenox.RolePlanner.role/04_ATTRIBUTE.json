@@ -555,9 +555,9 @@
         {
             "_EXPORT_SUMMARY": "Status [status]",
             "CREATED_ON": "2025-03-14 15:12:41",
-            "MODIFIED_ON": "2025-03-17 16:24:59",
+            "MODIFIED_ON": "2025-07-02 10:01:16",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
-            "MODIFIED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f0b13a647b273cb13a005056bef75d",
             "SORTABLEFLAG": 1,
             "FILTERABLEFLAG": 1,
@@ -599,9 +599,11 @@
             "FIXED_VALUE": "",
             "CUSTOM_DATA_TYPE": {
                 "values": {
-                    "10": "Draft",
-                    "50": "Inactive",
-                    "100": "Active"
+                    "10": "Entwurf",
+                    "50": "Inaktiv",
+                    "90": "Aktiv (Ausstehende Synchronisierung)",
+                    "110": "Aktiv (Ohne Synchronisierung)",
+                    "120": "Aktiv (Aktive Synchronisierung)"
                 },
                 "show_values": false
             }
@@ -836,6 +838,53 @@
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
             "CUSTOM_DATA_TYPE": null
+        },
+        {
+            "_EXPORT_SUMMARY": "Type [type]",
+            "CREATED_ON": "2025-07-02 09:54:04",
+            "MODIFIED_ON": "2025-07-02 09:57:11",
+            "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "UID": "0x11f098ceb9a9b41c98ce005056bef75d",
+            "SORTABLEFLAG": 1,
+            "FILTERABLEFLAG": 1,
+            "AGGREGATABLEFLAG": 1,
+            "DEFAULT_AGGREGATE_FUNCTION": "",
+            "VALUE_LIST_DELIMITER": ",",
+            "READABLEFLAG": 1,
+            "WRITABLEFLAG": 1,
+            "SYSTEMFLAG": 0,
+            "DEFAULT_EDITOR_UXON": null,
+            "COPY_WITH_RELATED_OBJECT": 0,
+            "DELETE_WITH_RELATED_OBJECT": 0,
+            "DEFAULT_DISPLAY_UXON": null,
+            "COMMENTS": "",
+            "NAME": "Type",
+            "RELATION_CARDINALITY": "",
+            "TYPE": "D",
+            "COPYABLEFLAG": 1,
+            "ALIAS": "type",
+            "DATATYPE": "0x30000000000000000000000000000000",
+            "DATA_ADDRESS": "type",
+            "OBJECT": "0x11f08ce364108d3c8ce3005056bef75d",
+            "FORMATTER": "",
+            "DISPLAYORDER": null,
+            "LABELFLAG": 0,
+            "UIDFLAG": 0,
+            "HIDDENFLAG": 0,
+            "EDITABLEFLAG": 1,
+            "REQUIREDFLAG": 1,
+            "RELATED_OBJ": null,
+            "SORTERPOS": null,
+            "SORTERDIR": "",
+            "RELATED_OBJ_ATTR": null,
+            "SHORT_DESCRIPTION": "",
+            "DATA_ADDRESS_PROPS": null,
+            "DEFAULT_VALUE": "",
+            "FIXED_VALUE": "",
+            "CUSTOM_DATA_TYPE": {
+                "length_max": 100
+            }
         }
     ],
     "totals_rows": [],

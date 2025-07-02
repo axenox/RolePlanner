@@ -1,5 +1,7 @@
 {
     "CONFIG_UXON.NAME.DRAFT": "Entwurf",
     "CONFIG_UXON.NAME.INACTIVE": "Inaktiv",
-    "CONFIG_UXON.NAME.ACTIVE": "Aktiv"
+    "CONFIG_UXON.NAME.ACTIVE_(PENDING_SYNCHRONIZATION)": "Aktiv (Ausstehende Synchronisierung)",
+    "CONFIG_UXON.NAME.ACTIVE_(NO_SYNCHRONIZATION)": "Aktiv (Ohne Synchronisierung)",
+    "CONFIG_UXON.NAME.ACTIVE_(ACTIVE_SYNCHRONIZATION)": "Aktiv (Aktive Synchronisierung)"
 }

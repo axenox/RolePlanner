@@ -5,19 +5,19 @@
     "menu_index": 17,
     "menu_visible": true,
     "name": "Rollenkonzeption",
-    "description": "",
+    "description": "Beschreibung",
     "intro": "",
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
     "modified_by_user_selector": "0x11edadc86322ed48adc8005056bef75d",
-    "modified_on": "2025-03-20 09:08:17",
+    "modified_on": "2025-07-02 10:20:02",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
         "tabs": [
             {
-                "caption": "Existing role synchronizations",
+                "caption": "Eingerichtete Rollensynchronisationen",
                 "widgets": [
                     {
                         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
@@ -27,7 +27,7 @@
                         "filters": [
                             {
                                 "attribute_alias": "USER_ROLE__APP__NAME",
-                                "caption": "App",
+                                "caption": "Modul",
                                 "apply_on_change": true,
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
@@ -36,11 +36,11 @@
                             },
                             {
                                 "attribute_alias": "NAME",
-                                "caption": "Ext. role name"
+                                "caption": "Ext. Rollenname"
                             },
                             {
                                 "attribute_alias": "ALIAS",
-                                "caption": "Ext. role alias"
+                                "caption": "Ext. Rollenalias"
                             },
                             {
                                 "attribute_alias": "USER_ROLE",
@@ -53,6 +53,7 @@
                             {
                                 "attribute_alias": "USER_ROLE__ALIAS",
                                 "apply_on_change": true,
+                                "caption": "Interner Rollenalias",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true
@@ -75,29 +76,32 @@
                             },
                             {
                                 "attribute_alias": "NAME",
-                                "caption": "Ext. role name"
+                                "caption": "Ext. Rollenname"
                             },
                             {
                                 "attribute_alias": "ALIAS",
-                                "caption": "Ext. role alias"
+                                "caption": "Ext. Rollenalias"
                             },
                             {
                                 "attribute_alias": "USER_ROLE__LABEL",
-                                "caption": "Internal role"
+                                "caption": "Interne Rolle"
                             },
                             {
                                 "attribute_alias": "USER_ROLE__ALIAS",
-                                "caption": "Internal role alias"
+                                "caption": "Interner Rollenalias"
                             },
                             {
                                 "attribute_alias": "CREATED_ON"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE__role__description"
                             }
                         ]
                     }
                 ]
             },
             {
-                "caption": "Internal roles to external roles",
+                "caption": "Interne Rollen zu externe Rollen",
                 "widgets": [
                     {
                         "object_alias": "exface.Core.USER_ROLE",
@@ -107,7 +111,7 @@
                         "filters": [
                             {
                                 "attribute_alias": "APP",
-                                "caption": "App",
+                                "caption": "Modul",
                                 "apply_on_change": true,
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
@@ -123,15 +127,15 @@
                             },
                             {
                                 "attribute_alias": "USER_ROLE_EXTERNAL__NAME",
-                                "caption": "Ext. role name"
+                                "caption": "Ext. Rollenname"
                             },
                             {
                                 "attribute_alias": "USER_ROLE_EXTERNAL__ALIAS",
-                                "caption": "Ext. role alias"
+                                "caption": "Ext. Rollenalias"
                             },
                             {
                                 "attribute_alias": "NAME",
-                                "caption": "Internal role",
+                                "caption": "Interne Rolle",
                                 "apply_on_change": true,
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
@@ -156,7 +160,7 @@
                             },
                             {
                                 "attribute_alias": "ALIAS",
-                                "caption": "Internal role alias",
+                                "caption": "Interner Rollenalias",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true,
@@ -182,20 +186,24 @@
                         ],
                         "columns": [
                             {
+                                "attribute_alias": "APP__ALIAS",
+                                "caption": "Modul"
+                            },
+                            {
                                 "attribute_alias": "NAME",
-                                "caption": "Internal role"
+                                "caption": "Interne Rolle"
                             },
                             {
                                 "attribute_alias": "ALIAS",
-                                "caption": "Internal role alias"
+                                "caption": "Interner Rollenalias"
                             },
                             {
                                 "attribute_alias": "USER_ROLE_EXTERNAL__NAME:LIST",
-                                "caption": "Ext. role names"
+                                "caption": "Ext. Rollennamen"
                             },
                             {
                                 "attribute_alias": "USER_ROLE_EXTERNAL__ALIAS:LIST",
-                                "caption": "Ext. role alias"
+                                "caption": "Ext. Rollenalias"
                             }
                         ],
                         "aggregate_by_attribute_alias": [
@@ -207,14 +215,14 @@
                 ]
             },
             {
-                "caption": "Comparison manually assigned/synchronized roles",
+                "caption": "Vergleich lokale/externe Rollen",
                 "widgets": [
                     {
                         "object_alias": "exface.Core.USER_ROLE",
                         "widget_type": "SplitHorizontal",
                         "panels": [
                             {
-                                "caption": "Manually assigned roles",
+                                "caption": "Lokale/manuell vergebene Rollen",
                                 "width": "50%",
                                 "widgets": [
                                     {
@@ -228,7 +236,7 @@
                                             {
                                                 "attribute_alias": "USER_ROLE__APP",
                                                 "apply_on_change": true,
-                                                "caption": "App",
+                                                "caption": "Modul",
                                                 "input_widget": {
                                                     "widget_type": "InputComboTable",
                                                     "multi_select": true,
@@ -253,7 +261,7 @@
                                             {
                                                 "attribute_alias": "USER_ROLE",
                                                 "apply_on_change": true,
-                                                "caption": "Internal role name",
+                                                "caption": "Interner Rollenname",
                                                 "input_widget": {
                                                     "widget_type": "InputComboTable",
                                                     "multi_select": true,
@@ -288,7 +296,7 @@
                                 ]
                             },
                             {
-                                "caption": "Synchronized roles",
+                                "caption": "Externe/synchronisierte Rollen",
                                 "width": "50%",
                                 "widgets": [
                                     {
@@ -330,7 +338,8 @@
                                                 "attribute_alias": "USER_ROLE__LABEL"
                                             },
                                             {
-                                                "attribute_alias": "AUTHENTICATOR_ID"
+                                                "attribute_alias": "AUTHENTICATOR_ID",
+                                                "caption": "Authentikator"
                                             }
                                         ]
                                     }
@@ -341,7 +350,7 @@
                 ]
             },
             {
-                "caption": "Role concept",
+                "caption": "Rollenkonzeption",
                 "widgets": [
                     {
                         "object_alias": "axenox.RolePlanner.role",
@@ -350,12 +359,13 @@
                         "hide_caption": true,
                         "filters": [
                             {
-                                "attribute_alias": "name"
+                                "attribute_alias": "name",
+                                "caption": "Geplanter Rollenname"
                             },
                             {
                                 "attribute_alias": "app",
                                 "apply_on_change": true,
-                                "caption": "App",
+                                "caption": "Modul",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true
@@ -364,7 +374,7 @@
                             {
                                 "attribute_alias": "user_role",
                                 "apply_on_change": true,
-                                "caption": "Internal role name",
+                                "caption": "Interner Rollenname",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true
@@ -373,7 +383,7 @@
                             {
                                 "attribute_alias": "external_role_name",
                                 "apply_on_change": true,
-                                "caption": "Ext. role name",
+                                "caption": "Ext. Rollenname",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true
@@ -382,7 +392,7 @@
                             {
                                 "attribute_alias": "external_role_alias",
                                 "apply_on_change": true,
-                                "caption": "Ext. role alias",
+                                "caption": "Ext. Rollenalias",
                                 "input_widget": {
                                     "widget_type": "InputComboTable",
                                     "multi_select": true
@@ -391,18 +401,26 @@
                             {
                                 "attribute_alias": "status",
                                 "apply_on_change": true
+                            },
+                            {
+                                "attribute_alias": "type",
+                                "apply_on_change": true
                             }
                         ],
                         "columns": [
                             {
-                                "attribute_alias": "name"
+                                "attribute_alias": "name",
+                                "caption": "Geplanter Rollenname"
                             },
                             {
                                 "attribute_alias": "app__LABEL"
                             },
                             {
                                 "attribute_alias": "user_role__LABEL",
-                                "caption": "Internal role name"
+                                "caption": "Interner Rollenname"
+                            },
+                            {
+                                "attribute_alias": "type"
                             },
                             {
                                 "attribute_alias": "status"
@@ -415,19 +433,19 @@
                             },
                             {
                                 "attribute_alias": "external_role_name",
-                                "caption": "Ext. role name"
+                                "caption": "Ext. Rollenname"
                             },
                             {
                                 "attribute_alias": "external_role_alias",
-                                "caption": "Ext. role alias"
+                                "caption": "Ext. Rollenalias"
                             },
                             {
                                 "attribute_alias": "external_role_sync_flag",
-                                "caption": "Synchronize with ext. role"
+                                "caption": "Mit ext. Rolle synchronisieren"
                             },
                             {
                                 "attribute_alias": "external_role_mapped_flag",
-                                "caption": "Ext. role mapped"
+                                "caption": "Ext. Rolle verbunden"
                             },
                             {
                                 "attribute_alias": "permissions_read",
@@ -458,7 +476,7 @@
                             },
                             {
                                 "attribute_alias": "CREATED_BY_USER__LABEL",
-                                "caption": "Created by"
+                                "caption": "Ersteller"
                             }
                         ],
                         "buttons": [
@@ -475,6 +493,50 @@
                             {
                                 "action_alias": "exface.core.DeleteObject",
                                 "visibility": "optional"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "Externe Rollen des aktuell eingeloggten Benutzers",
+                "widgets": [
+                    {
+                        "widget_type": "DataTable",
+                        "object_alias": "axenox.Microsoft365Connector.meGroups",
+                        "hide_header": false,
+                        "hide_caption": true,
+                        "autoload_data": false,
+                        "autoload_disabled_hint": "Bitte \"Suchen\" drücken, um die Liste der externen Rollen des aktuellen Benutzers zu sehen.",
+                        "paginate": false,
+                        "filters": [
+                            {
+                                "attribute_alias": "id",
+                                "caption": "Ext. Rollenalias (Id)",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            },
+                            {
+                                "attribute_alias": "displayName",
+                                "caption": "Ext. Rollenname (displayName)",
+                                "apply_on_change": true,
+                                "input_widget": {
+                                    "widget_type": "InputComboTable",
+                                    "multi_select": true
+                                }
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "id",
+                                "caption": "Ext. Rollenalias (Id)"
+                            },
+                            {
+                                "attribute_alias": "displayName",
+                                "caption": "Ext. Rollenname (displayName)"
                             }
                         ]
                     }

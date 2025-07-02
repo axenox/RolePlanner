@@ -63,7 +63,7 @@
         {
             "_EXPORT_SUMMARY": "Status model",
             "CREATED_ON": "2025-03-14 15:32:04",
-            "MODIFIED_ON": "2025-03-14 15:33:11",
+            "MODIFIED_ON": "2025-07-02 10:03:27",
             "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f0b88319cd9834b883005056bef75d",
@@ -80,8 +80,16 @@
                         "name": "Inactive",
                         "color": "orange"
                     },
-                    "100": {
-                        "name": "Active",
+                    "90": {
+                        "name": "Active (Pending Synchronization)",
+                        "color": "darkorange"
+                    },
+                    "110": {
+                        "name": "Active (No Synchronization)",
+                        "color": "green"
+                    },
+                    "120": {
+                        "name": "Active (Active Synchronization)",
                         "color": "green"
                     }
                 }
@@ -96,9 +104,9 @@
         {
             "_EXPORT_SUMMARY": "Custom attributes stored as JSON",
             "CREATED_ON": "2025-03-17 16:14:02",
-            "MODIFIED_ON": "2025-03-17 16:35:00",
+            "MODIFIED_ON": "2025-03-20 08:38:51",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
-            "MODIFIED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f0a395756f40b2a395005056bef75d",
             "BEHAVIOR": "exface/core/Behaviors/CustomAttributesJsonBehavior.php",
             "CONFIG_UXON": {
