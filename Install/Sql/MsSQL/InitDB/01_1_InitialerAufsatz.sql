@@ -1,7 +1,7 @@
 -- Schema creations must be the only statement in a batch. One way to get around it is with the Exec
 IF (NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo'))
 BEGIN
-	EXEC ('CREATE SCHEMA [dbo] AUTHORIZATION [dbo]')
+	EXEC ('CREATE SCHEMA [dbo]')
 END
 GO
 
