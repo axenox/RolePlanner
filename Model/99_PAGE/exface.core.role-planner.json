@@ -1,7 +1,8 @@
 {
     "uid": "0x11f0b34361458986b343005056bef75d",
     "alias_with_namespace": "exface.core.role-planner",
-    "menu_parent_page_selector": "0xf8310d4bba2c11e7895fe4b318306b9a",
+    "menu_home": true,
+    "menu_parent_page_selector": null,
     "menu_index": 17,
     "menu_visible": true,
     "name": "Rollenkonzeption",
@@ -10,8 +11,8 @@
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
-    "modified_by_user_selector": "0x11edadc86322ed48adc8005056bef75d",
-    "modified_on": "2025-07-02 10:20:02",
+    "modified_by_user_selector": "0x11ec847c0fdb0096847c005056bea39f",
+    "modified_on": "2025-07-30 14:04:53",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
