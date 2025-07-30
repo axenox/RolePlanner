@@ -1,0 +1,85 @@
+{
+    "object_alias": "exface.Core.PAGE_GROUP_PAGES",
+    "columns": [
+        {
+            "name": "_EXPORT_SUMMARY",
+            "hidden": true,
+            "attribute_alias": "LABEL"
+        },
+        {
+            "name": "CREATED_ON",
+            "attribute_alias": "CREATED_ON"
+        },
+        {
+            "name": "MODIFIED_ON",
+            "attribute_alias": "MODIFIED_ON"
+        },
+        {
+            "name": "CREATED_BY_USER",
+            "attribute_alias": "CREATED_BY_USER"
+        },
+        {
+            "name": "MODIFIED_BY_USER",
+            "attribute_alias": "MODIFIED_BY_USER"
+        },
+        {
+            "name": "UID",
+            "attribute_alias": "UID"
+        },
+        {
+            "name": "PAGE",
+            "attribute_alias": "PAGE"
+        },
+        {
+            "name": "PAGE_GROUP",
+            "attribute_alias": "PAGE_GROUP"
+        }
+    ],
+    "rows": [
+        {
+            "_EXPORT_SUMMARY": "Role Planner / Custom role attributes",
+            "CREATED_ON": "2025-07-30 12:56:03",
+            "MODIFIED_ON": "2025-07-30 12:56:03",
+            "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "UID": "0x11f080d9c918692280d9005056bef75d",
+            "PAGE": "0x11f0891794fe87328917005056bef75d",
+            "PAGE_GROUP": "0x11f09584be5192de9584005056bef75d"
+        },
+        {
+            "_EXPORT_SUMMARY": "Role Planner / Role Planner",
+            "CREATED_ON": "2025-07-30 12:56:03",
+            "MODIFIED_ON": "2025-07-30 12:56:03",
+            "CREATED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
+            "UID": "0x11f09578c9182ca09578005056bef75d",
+            "PAGE": "0x11f0b34361458986b343005056bef75d",
+            "PAGE_GROUP": "0x11f09584be5192de9584005056bef75d"
+        }
+    ],
+    "totals_rows": [],
+    "filters": {
+        "operator": "AND",
+        "base_object_alias": "exface.Core.PAGE_GROUP_PAGES",
+        "conditions": [
+            {
+                "expression": "PAGE__APP",
+                "comparator": "=",
+                "value": "0x11f085cb08dbfec285cb005056bef75d",
+                "object_alias": "exface.Core.PAGE_GROUP_PAGES"
+            }
+        ]
+    },
+    "rows_limit": null,
+    "rows_offset": 0,
+    "sorters": [
+        {
+            "attribute_alias": "CREATED_ON",
+            "direction": "ASC"
+        },
+        {
+            "attribute_alias": "UID",
+            "direction": "ASC"
+        }
+    ]
+}

@@ -1,11 +1,10 @@
--- Schema creations must be the only statement in a batch. One way to get around it is with the Exec
 IF (NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo'))
 BEGIN
 	EXEC ('CREATE SCHEMA [dbo]')
 END
 GO
 
--- create tables
+-- CREATE TABLES
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -64,7 +63,7 @@ CREATE TABLE [dbo].[rp_role_attribute]
 ) ON [PRIMARY]
 GO
 
--- foreign keys
+-- CREATE FOREIGN KEYS
 ALTER TABLE [dbo].[rp_role] WITH CHECK ADD CONSTRAINT [FK_dbo_rp_role_exf_app] FOREIGN KEY([app_oid])
 REFERENCES [dbo].[exf_app] ([oid])
 GO
@@ -75,7 +74,7 @@ ALTER TABLE [dbo].[rp_role_attribute] WITH CHECK ADD CONSTRAINT [FK_dbo_rp_role_
 REFERENCES [dbo].[exf_app] ([oid])
 GO
 
--- unique indexes
+-- CREATE UNIQUE INDEXES
 CREATE UNIQUE NONCLUSTERED INDEX [UIX_dbo_rp_role_name] ON [dbo].[rp_role]
 (
 	[name] ASC
