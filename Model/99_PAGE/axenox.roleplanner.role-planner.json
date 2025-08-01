@@ -1,6 +1,6 @@
 {
     "uid": "0x11f0b34361458986b343005056bef75d",
-    "alias_with_namespace": "exface.core.role-planner",
+    "alias_with_namespace": "axenox.roleplanner.role-planner",
     "menu_home": true,
     "menu_parent_page_selector": null,
     "menu_index": 17,
@@ -12,7 +12,7 @@
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
     "modified_by_user_selector": "0x11ec847c0fdb0096847c005056bea39f",
-    "modified_on": "2025-08-01 17:38:26",
+    "modified_on": "2025-08-01 22:06:02",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
