@@ -5,14 +5,14 @@
     "menu_parent_page_selector": null,
     "menu_index": 17,
     "menu_visible": true,
-    "name": "Rollenkonzeption",
-    "description": "Beschreibung",
+    "name": "Rollenübersicht",
+    "description": "Rollen einsehen und planen",
     "intro": "",
     "replaces_page_selector": null,
     "created_by_user_selector": "0x11eca7f5b092f284a7f5005056bea39f",
     "created_on": "2025-03-17 15:59:09",
     "modified_by_user_selector": "0x11ec847c0fdb0096847c005056bea39f",
-    "modified_on": "2025-07-30 14:04:53",
+    "modified_on": "2025-08-01 17:38:26",
     "contents": {
         "widget_type": "Tabs",
         "object_alias": "exface.Core.USER_ROLE_EXTERNAL",
@@ -211,6 +211,177 @@
                             "NAME",
                             "ALIAS",
                             "APP"
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "Benutzer-Rollen-Zuordnung",
+                "widgets": [
+                    {
+                        "widget_type": "DataTable",
+                        "object_alias": "exface.Core.USER",
+                        "sorters": [
+                            {
+                                "attribute_alias": "USERNAME",
+                                "direction": "asc"
+                            }
+                        ],
+                        "filters": [
+                            {
+                                "attribute_alias": "USERNAME"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_USERS__USER_ROLE",
+                                "apply_to_aggregates": false,
+                                "multi_select": true,
+                                "caption": "Hat Rolle(n)"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_USERS__USER_ROLE",
+                                "apply_to_aggregates": false,
+                                "multi_select": true,
+                                "caption": "Hat Rolle(n)"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_USERS__USER_ROLE",
+                                "apply_to_aggregates": false,
+                                "caption": "Hat Rolle(n) nicht",
+                                "comparator": "![",
+                                "multi_select": true
+                            },
+                            {
+                                "caption": "Gesperrt",
+                                "attribute_alias": "DISABLED_FLAG",
+                                "widget_type": "InputSelect",
+                                "selectable_null": false
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "USERNAME"
+                            },
+                            {
+                                "attribute_alias": "DISABLED_FLAG",
+                                "caption": "Gesp."
+                            },
+                            {
+                                "attribute_alias": "DISABLED_COMMUNICATION_FLAG",
+                                "caption": "Kommun."
+                            },
+                            {
+                                "attribute_alias": "FIRST_NAME"
+                            },
+                            {
+                                "attribute_alias": "LAST_NAME"
+                            },
+                            {
+                                "filterable": false,
+                                "attribute_alias": "USER_ROLE_USERS__USER_ROLE__LABEL:LIST_DISTINCT"
+                            },
+                            {
+                                "attribute_alias": "USER_ROLE_USERS__USER_ROLE__USER_ROLE_EXTERNAL__LABEL:LIST_DISTINCT",
+                                "visibility": "optional",
+                                "caption": "AD-Gruppen zu Rollen"
+                            },
+                            {
+                                "attribute_alias": "EMAIL"
+                            },
+                            {
+                                "attribute_alias": "USER_AUTHENTICATOR__AUTHENTICATOR_USERNAME:LIST_DISTINCT"
+                            },
+                            {
+                                "attribute_alias": "USER_AUTHENTICATOR__LAST_AUTHENTICATED_ON:MAX",
+                                "caption": "=Translate('exface.Core', 'PAGE.USERS.LAST_LOGIN')"
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "caption": "Nutzer-Details",
+                                "icon": "info",
+                                "action": {
+                                    "alias": "exface.core.ShowDialog",
+                                    "input_rows_min": 1,
+                                    "input_rows_max": 1,
+                                    "dialog": {
+                                        "object_alias": "exface.Core.USER",
+                                        "width": 2,
+                                        "readonly": true,
+                                        "header": {
+                                            "widgets": [
+                                                {
+                                                    "widget_type": "WidgetGroup",
+                                                    "widgets": [
+                                                        {
+                                                            "attribute_alias": "LABEL",
+                                                            "caption": "Name",
+                                                            "widget_type": "Display"
+                                                        },
+                                                        {
+                                                            "attribute_alias": "USERNAME",
+                                                            "widget_type": "Display",
+                                                            "id": "username"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "widget_type": "WidgetGroup",
+                                                    "widgets": [
+                                                        {
+                                                            "attribute_alias": "EMAIL"
+                                                        },
+                                                        {
+                                                            "attribute_alias": "USER_AUTHENTICATOR__LAST_AUTHENTICATED_ON:MAX",
+                                                            "caption": "Letzer Login",
+                                                            "widget_type": "Display"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "widget_type": "WidgetGroup",
+                                                    "widgets": [
+                                                        {
+                                                            "attribute_alias": "DISABLED_FLAG",
+                                                            "caption": "Gesperrt"
+                                                        },
+                                                        {
+                                                            "attribute_alias": "DISABLED_COMMUNICATION_FLAG",
+                                                            "caption": "Kommunikation"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "widgets": [
+                                            {
+                                                "widget_type": "DataTable",
+                                                "object_alias": "exface.Core.USER_ROLE_USERS",
+                                                "height_in_rows": 5,
+                                                "hide_header": true,
+                                                "hide_caption": true,
+                                                "columns": [
+                                                    {
+                                                        "attribute_alias": "USER_ROLE__NAME"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "AUTHENTICATOR_ID"
+                                                    }
+                                                ],
+                                                "filters": [
+                                                    {
+                                                        "attribute_alias": "USER__USERNAME",
+                                                        "required": true,
+                                                        "apply_on_change": true,
+                                                        "comparator": "==",
+                                                        "value": "=username",
+                                                        "hidden": true
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
                         ]
                     }
                 ]
