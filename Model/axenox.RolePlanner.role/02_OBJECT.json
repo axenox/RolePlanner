@@ -87,7 +87,7 @@
         {
             "_EXPORT_SUMMARY": "Role [axenox.RolePlanner.role]",
             "CREATED_ON": "2025-03-14 15:12:41",
-            "MODIFIED_ON": "2025-03-19 09:05:36",
+            "MODIFIED_ON": "2025-08-05 11:37:09",
             "CREATED_BY_USER": "0x11eca7f5b092f284a7f5005056bea39f",
             "MODIFIED_BY_USER": "0x11edadc86322ed48adc8005056bef75d",
             "UID": "0x11f08ce364108d3c8ce3005056bef75d",
@@ -120,6 +120,9 @@
                             },
                             {
                                 "attribute_alias": "user_role"
+                            },
+                            {
+                                "attribute_alias": "type"
                             },
                             {
                                 "attribute_alias": "status"
